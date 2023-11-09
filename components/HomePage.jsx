@@ -4,11 +4,11 @@ const HomePage = () => {
   return (
     <section className="h-screen flex items-center justify-center">
       <div className="grid grid-cols-1">
-        <h1 className="text-white text-center text-7xl font-bold uppercase">
+        <h1 className="text-white text-center sm:text-7xl font-bold uppercase">
           Dominate the industry
           <br /> with Rapcult
         </h1>
-        <p className="text-white text-center text-lg text-slate-300 uppercase pt-8 tracking-widest">
+        <p className="text-center md:text-lg text-slate-300 uppercase pt-8 tracking-widest">
           Join us, garner recognition,
           <br /> and stream your way to success
         </p>
