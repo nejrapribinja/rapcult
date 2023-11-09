@@ -47,7 +47,7 @@ const PhotoSlider = () => {
           </div>
         ))}
       </div>
-      <p className="text-slate-400 w-full text-right uppercase md:text-4xl font-bold pr-10 ">
+      <p className="text-slate-400 w-full text-right uppercase md:text-4xl font-bold pr-10">
         of creators
         <br /> like you
       </p>
