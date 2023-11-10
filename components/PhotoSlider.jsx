@@ -8,7 +8,7 @@ const PhotoSlider = () => {
   const [sliderRef] = useKeenSlider({
     loop: true,
     mode: "free",
-    slides: { origin: "center", perView: 3.5, spacing: 20 },
+    slides: { origin: "center", perView: 5, spacing: 20 },
     range: {
       min: -5,
       max: 5,
@@ -16,11 +16,11 @@ const PhotoSlider = () => {
   });
 
   const images = [
-    "/assets/images/1.jpg",
     "/assets/images/2.jpg",
-    "/assets/images/6.jpg",
     "/assets/images/3.jpg",
-    "/assets/images/4.jpg",
+    "/assets/images/6.jpg",
+    "/assets/images/2.jpg",
+    "/assets/images/3.jpg",
     "/assets/images/6.jpg",
   ];
 
@@ -37,12 +37,12 @@ const PhotoSlider = () => {
         {images.map((image, index) => (
           <div className="keen-slider__slide " key={index}>
             <Image
-              width={400}
+              width={300}
               height={300}
               key={index}
               src={image}
               alt={`Slika ${index + 1}`}
-              className="rounded-xl object-cover"
+              className="rounded-[2.5rem]"
             />
           </div>
         ))}

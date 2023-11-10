@@ -19,7 +19,7 @@ const Benefits = () => {
       <div className="mt-[10rem]">
         <h2 className="text-center text-white md:text-4xl font-bold uppercase">amazing benefits</h2>
       </div>
-      <div className="pt-10 lg:pl-[10rem] lg:pr-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+      <div className="pt-10 mb-[5rem] lg:pl-[10rem] lg:pr-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
         {data.map((card, index) => (
           <Benefit key={index} text={card.text} title={card.title} icon={card.icon} />
         ))}
