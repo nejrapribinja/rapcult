@@ -1,6 +1,5 @@
 "use client";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
-import Image from "next/image";
 
 const TimelineBreakPoint = ({ point }) => {
   return (
