@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect } from "react";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 import Package from "./Package";
 import datapackage from "./datapackage.json";
@@ -6,9 +7,36 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 const Packages = () => {
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
+  const responsiveSlides = () => {
+    if (screenWidth >= 1024) {
+      return 4.5;
+    } else if (screenWidth >= 768) {
+      return 2.5;
+    } else {
+      return 1.5;
+    }
+  };
   const [sliderRef] = useKeenSlider({
     slides: {
-      perView: 4.5,
+      perView: responsiveSlides(),
       spacing: 10,
     },
   });
@@ -21,7 +49,7 @@ const Packages = () => {
           <br /> rapcult is welcoming and supportive community
         </p>
         <div className="mt-10 items-center">
-          <label className="block text-slate-400 text-sm  mb-2 text-center">
+          <label className="block text-slate-400 text-sm mb-2 text-center">
             Paste your Spotify link to get the right package
           </label>
           <div className="relative">
@@ -29,6 +57,7 @@ const Packages = () => {
               className="border border-white p-5 w-full bg-transparent "
               type="text"
               placeholder="http://"
+              aria-label="Send"
             />
             <button className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white text-sm p-2 rounded-full">
               <ArrowSmallRightIcon className="w-7 h-7" />
@@ -38,14 +67,8 @@ const Packages = () => {
       </div>
       <div ref={sliderRef} className="keen-slider">
         {datapackage.map((pack, index) => (
-          <div className="keen-slider__slide">
-            <Package
-              key={index}
-              pack={pack.pack}
-              title={pack.title}
-              text={pack.text}
-              featurs={pack.featurs}
-            />
+          <div className="keen-slider__slide " key={index}>
+            <Package pack={pack.pack} title={pack.title} text={pack.text} featurs={pack.featurs} />
           </div>
         ))}
       </div>

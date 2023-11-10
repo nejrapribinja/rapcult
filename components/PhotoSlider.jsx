@@ -30,12 +30,9 @@ const PhotoSlider = () => {
         join creative
         <br /> comunity
       </p>
-      <div
-        ref={sliderRef}
-        className="keen-slider image-row "
-        style={{ transform: "rotate(-5deg)" }}>
+      <div ref={sliderRef} className="keen-slider" style={{ transform: "rotate(-5deg)" }}>
         {images.map((image, index) => (
-          <div className="keen-slider__slide " key={index}>
+          <div className="keen-slider__slide" key={index}>
             <Image
               width={300}
               height={300}
