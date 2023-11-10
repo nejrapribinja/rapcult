@@ -69,10 +69,11 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <div className="h-60 relative flex justify-center items-center mt-10 mb-[7rem]">
+      <div className="h-60 relative flex justify-center items-center  mb-[7rem]">
         <button className="bg-primary p-3 uppercase text-white flex z-10">
           join rapcult <ArrowSmallRightIcon className="w-6 h-6" />
         </button>
+        <div className="absolute top-0 left-1/2 transform -translate-x-1/2  w-[0.075rem] h-1/2 bg-red-500"></div>
         <div className="absolute overflow-hidden max-w-full">
           <style jsx>{`
             @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik:wght@300;400;500;700&family=Tourney:wght@500&display=swap");
