@@ -1,0 +1,38 @@
+[
+    {
+        "pack": "package #1",
+        "title": "bronze",
+        "text": "",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    },
+    {
+        "pack": "package #2",
+        "title": "Silver",
+        "text": "Evertyhing in bronze, plus:",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    },
+    {
+        "pack": "package #3",
+        "title": "Gold",
+        "text": "Evertyhing in silver, plus:",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    },
+    {
+        "pack": "package #4",
+        "title": "Platinum",
+        "text": "Evertyhing in gold, plus:",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    },
+    {
+        "pack": "package #5",
+        "title": "Diamond",
+        "text": "Evertyhing in platinum, plus:",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    },
+    {
+        "pack": "package #6",
+        "title": "Diamond",
+        "text": "Evertyhing in platinum, plus:",
+        "featurs": ["lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum","lorem ipsum"]
+    }
+]

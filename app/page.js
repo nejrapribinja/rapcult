@@ -1,6 +1,7 @@
 import Benefits from "@/components/Benefits";
 import HomePage from "@/components/HomePage";
 import HowItWorks from "@/components/HowItWorks";
+import Packages from "@/components/Packages";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <HomePage />
       <Benefits />
       <HowItWorks />
+      <Packages />
     </main>
   );
 }

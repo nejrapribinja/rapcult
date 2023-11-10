@@ -2,7 +2,7 @@ import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 
 const Footer = () => {
   return (
-    <section className=" bg-fourth rounded-t-[4.5rem]">
+    <section className=" bg-fourth rounded-t-[4.5rem] pb-10">
       <div className="flex justify-between items-center">
         <div>
           <p className="text-white w-full text-left uppercase md:text-4xl font-bold ml-20 m-10">
