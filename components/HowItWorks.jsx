@@ -21,7 +21,7 @@ const HowItWorks = () => {
 
   return (
     <>
-      <div className="lg:px-40">
+      <div className="lg:px-40" id="howitworks">
         <h1 className="text-center text-white md:text-4xl font-bold uppercase mt-[8rem] mb-10">
           How it works
         </h1>
@@ -69,8 +69,8 @@ const HowItWorks = () => {
           </div>
         </div>
       </div>
-      <div className="h-60 relative flex justify-center items-center  mb-[7rem]">
-        <button className="bg-primary p-3 uppercase text-white flex z-10">
+      <div className="h-60 relative flex justify-center items-center mb-[7rem]">
+        <button className="bg-primary p-3 uppercase text-white flex z-10 shadow-[0_35px_60px_-15px_rgba(0,0,00.3)]">
           join rapcult <ArrowSmallRightIcon className="w-6 h-6" />
         </button>
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2  w-[0.075rem] h-1/2 bg-red-500"></div>
@@ -83,7 +83,7 @@ const HowItWorks = () => {
               font-size: 16rem;
               margin-top: 0;
               white-space: nowrap;
-      animation: scroll 20s linear infinite;
+              animation: scroll 20s linear infinite;
             }
             @keyframes scroll {
               from {

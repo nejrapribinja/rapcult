@@ -41,7 +41,7 @@ const Packages = () => {
     },
   });
   return (
-    <section className="flex flex-col items-center bg-fifth w-full rounded-[4.5rem] ">
+    <section className="flex flex-col items-center bg-fifth w-full rounded-[4.5rem]" id="packages">
       <div className="mt-[5rem]">
         <h2 className="text-center text-white md:text-6xl font-bold uppercase">join rapcult</h2>
         <p className="text-slate-400 text-center pt-10 uppercase text-xl">
