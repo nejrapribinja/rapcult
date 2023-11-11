@@ -4,6 +4,7 @@ import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import datastories from "./datastories.json";
 import Story from "./Story";
+import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 
 const SuccessStories = () => {
   const [screenWidth, setScreenWidth] = useState(0);
@@ -85,6 +86,20 @@ const SuccessStories = () => {
           })}
         </div>
       )}
+      <div className="flex justify-between items-center bg-primary m-10 md:ml-[10rem] md:mr-[10rem] rounded-lg">
+        <div>
+          <p className="text-white w-full text-left uppercase md:text-4xl font-bold ml-20 m-10">
+            get your success story
+            <br />
+            with rapcult
+          </p>
+        </div>
+        <div className="m-10 mr-20">
+          <button className="font-bold p-3 uppercase bg-white flex ">
+            join rapcult <ArrowSmallRightIcon className="w-6 h-6" />
+          </button>
+        </div>
+      </div>
     </>
   );
 };
