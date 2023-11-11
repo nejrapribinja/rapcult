@@ -18,6 +18,15 @@ module.exports = {
         fourth: "#26292c",
         fifth: "#25272a",
       },
+      keyframes: {
+        slide: {
+          from: { transform: "translateX(100%)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        slide: "slide 20s linear infinite",
+      },
     },
   },
   plugins: [],

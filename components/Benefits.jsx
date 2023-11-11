@@ -1,4 +1,3 @@
-import React from "react";
 import PhotoSlider from "./PhotoSlider";
 import data from "./data.json";
 import Benefit from "./Benefit";

@@ -1,4 +1,3 @@
-"use client";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 
 const TimelineBreakPoint = ({ point }) => {
@@ -75,25 +74,9 @@ const HowItWorks = () => {
         </button>
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2  w-[0.075rem] h-1/2 bg-red-500"></div>
         <div className="absolute overflow-hidden max-w-full">
-          <style jsx>{`
-            @import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Rubik:wght@300;400;500;700&family=Tourney:wght@500&display=swap");
-            p {
-              font-family: "Londrina Outline", sans-serif;
-              font-weight: 400;
-              font-size: 16rem;
-              margin-top: 0;
-              white-space: nowrap;
-              animation: scroll 20s linear infinite;
-            }
-            @keyframes scroll {
-              from {
-                transform: translateX(100%);
-              }
-              to {
-                transform: translateX(-100%);
-              }
-          `}</style>{" "}
-          <p className="text-primary opacity-30 tracking-widest uppercase">join rapcult</p>
+          <p className="text-secondary opacity-30 tracking-widest uppercase font-outline-2 whitespace-nowrap mt-0 text-[16rem] animate-slide">
+            join rapcult
+          </p>
         </div>
       </div>
     </>

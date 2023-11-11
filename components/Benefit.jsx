@@ -1,5 +1,3 @@
-"use client";
-import React from "react";
 import { ChevronDownIcon, ClipboardDocumentListIcon } from "@heroicons/react/20/solid";
 
 const Benefit = ({ title, icon, text }) => {

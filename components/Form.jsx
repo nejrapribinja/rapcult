@@ -1,4 +1,3 @@
-"use client";
 import { ArrowSmallRightIcon } from "@heroicons/react/20/solid";
 
 const Form = () => {

@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .font-outline-2 {
+    text-shadow: 
+    -1px -1px 0 #ff3939,
+     1px -1px 0 #ff3939,
+    -1px 1px 0 #ff3939,
+     1px 1px 0 #ff3939;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px #ff3939;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
