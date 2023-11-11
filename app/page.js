@@ -1,3 +1,4 @@
+import AboutRapcult from "@/components/AboutRapcult";
 import Benefits from "@/components/Benefits";
 import HomePage from "@/components/HomePage";
 import HowItWorks from "@/components/HowItWorks";
@@ -12,6 +13,7 @@ export default function Home() {
       <HowItWorks />
       <Packages />
       <SuccessStories />
+      <AboutRapcult />
     </main>
   );
 }
