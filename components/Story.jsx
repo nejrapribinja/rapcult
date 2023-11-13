@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
@@ -13,13 +12,13 @@ const Story = ({ image, title, text, streams, revenue, collabs }) => {
         <div className="font-sm">{text}</div>
         <div className="bg-slate-400 mb-8 mt-10 h-[0.055rem]"></div>
         <div className="flex">
-          <p className="text-slate-400 text-sm pr-10">
+          <p className="text-slate-400 text-sm pr-5">
             {streams}
             <ArrowUpRightIcon className="text-primary w-5 h-5 inline-block" />
             <br />
             STREAMS
           </p>
-          <p className="text-slate-400 text-sm pr-10">
+          <p className="text-slate-400 text-sm pr-5">
             {revenue}
             <ArrowUpRightIcon className="text-primary w-5 h-5 inline-block" />
             <br />
