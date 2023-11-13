@@ -10,9 +10,6 @@
     -1px 1px 0 #ff3939,
      1px 1px 0 #ff3939;
   }
-  .font-outline-4 {
-    -webkit-text-stroke: 4px #ff3939;
-  }
 }
 
 :root {
@@ -31,6 +28,7 @@
 
 body {
   background-color: #212326;
+  max-width: 100vw !important;
 }
 
 .navigation-wrapper {

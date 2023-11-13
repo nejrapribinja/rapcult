@@ -31,7 +31,7 @@ const Packages = () => {
     } else if (screenWidth >= 768) {
       return 2.5;
     } else {
-      return 1.5;
+      return 1;
     }
   };
   const [sliderRef] = useKeenSlider({

@@ -4,7 +4,7 @@ import { ArrowUpRightIcon } from "@heroicons/react/20/solid";
 
 const Story = ({ image, title, text, streams, revenue, collabs }) => {
   return (
-    <div className="flex bg-fourth text-white p-5 m-10 rounded-lg w-auto h-auto">
+    <div className="flex flex-col md:flex-row bg-fourth text-white p-5 m-10 rounded-lg ">
       <div className=" mr-8">
         <Image src={image} alt={title} className="w-full h-full" width={400} height={400} />
       </div>

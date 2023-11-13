@@ -8,7 +8,7 @@ const Benefits = () => {
       <div className="m-10">
         <h2 className="text-center text-slate-400 uppercase">technology trusted by</h2>
       </div>
-      <div className="flex flex-row space-x-20 items-center text-slate-400 mb-20">
+      <div className="flex flex-col md:flex-row md:space-x-20 items-center text-slate-400 mb-20">
         <p>logo</p>
         <p>logo</p>
         <p>logo</p>

@@ -3,7 +3,7 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 const Package = ({ pack, title, text, featurs }) => {
   return (
-    <div className="bg-fourth text-white p-10 m-10 rounded-lg w-[18rem]">
+    <div className="bg-fourth text-white p-10 m-10 rounded-lg w-[18rem] md:m-2">
       <p className="uppercase text-slate-400 text-center">{pack}</p>
       <p className="text-primary text-4xl text-center mt-5 mb-5 font-bold uppercase">{title}</p>
       <div className="bg-slate-400 mb-8 h-[0.055rem]"></div>

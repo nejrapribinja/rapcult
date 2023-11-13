@@ -1,14 +1,44 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import Image from "next/image";
 
 const PhotoSlider = () => {
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setScreenWidth(window.innerWidth);
+
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
+  const responsiveSlides = () => {
+    if (screenWidth >= 1024) {
+      return 5;
+    } else if (screenWidth >= 768) {
+      return 3;
+    } else {
+      return 1.5;
+    }
+  };
   const [sliderRef] = useKeenSlider({
     loop: true,
     mode: "free",
-    slides: { origin: "center", perView: 5, spacing: 20 },
+    slides: {
+      perView: responsiveSlides(),
+      spacing: 10,
+    },
     range: {
       min: -5,
       max: 5,

@@ -7,7 +7,7 @@ import SuccessStories from "@/components/SuccessStories";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-secondary  mx-auto">
+    <main className=" bg-secondary">
       <HomePage />
       <Benefits />
       <HowItWorks />

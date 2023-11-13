@@ -19,7 +19,7 @@ const AboutRapcult = () => {
         <p className="text-white uppercase md:text-2xl font-bold m-10">
           Frequently asked questions
         </p>
-        <div className="w-full h-auto mb-20 pr-20 pl-20 mx-auto">
+        <div className="w-full h-auto mb-20 md:pr-20 md:pl-20 mx-auto">
           {dataquestions.map((question, index) => {
             return (
               <AccordianItem

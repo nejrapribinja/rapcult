@@ -20,7 +20,7 @@ const navLinks = [
   },
   {
     title: "About rapcult",
-    path: "#about",
+    path: "#aboutrapcult",
   },
   {
     title: "About rapcult",
@@ -37,7 +37,7 @@ const Navbar = () => {
         <Link href={"/"} className="text-3xl text-white font-bold">
           RAPCULT
         </Link>
-        <div className="mobile-menu block md:hidden">
+        <div className="mobile-menu block lg:hidden">
           {navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(false)}
@@ -52,7 +52,7 @@ const Navbar = () => {
             </button>
           )}
         </div>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
+        <div className="menu hidden lg:block lg:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 ">
             {navLinks.map((link, index) => (
               <li key={index}>

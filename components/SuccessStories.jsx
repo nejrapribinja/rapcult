@@ -86,15 +86,15 @@ const SuccessStories = () => {
           })}
         </div>
       )}
-      <div className="flex justify-between items-center bg-primary m-10 md:ml-[10rem] md:mr-[10rem] rounded-lg">
+      <div className="flex flex-col md:flex-row justify-between items-center bg-primary m-10 md:ml-[10rem] md:mr-[10rem] rounded-lg">
         <div>
-          <p className="text-white w-full text-left uppercase md:text-4xl font-bold ml-20 m-10">
+          <p className="text-white text-left uppercase md:text-4xl font-bold ml-20 m-10">
             get your success story
             <br />
             with rapcult
           </p>
         </div>
-        <div className="m-10 mr-20">
+        <div className="m-20 ">
           <button className="font-bold p-3 uppercase bg-white flex ">
             join rapcult <ArrowSmallRightIcon className="w-6 h-6" />
           </button>
