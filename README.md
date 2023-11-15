@@ -1,1 +1,1 @@
-https://brilliant-daifuku-1f58ad.netlify.app/
+https://rapcult.netlify.app/
